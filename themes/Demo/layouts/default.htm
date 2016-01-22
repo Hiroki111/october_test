@@ -17,47 +17,31 @@ description = "Default layout"
     ]|theme }}" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header -->
-    <header id="layout-header">
-        <!-- Nav -->
-        <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
-                </div>
-                <div class="collapse navbar-collapse navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-                        <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                        <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+    <header>
+        <h1>Top Image</h1>
     </header>
 
-    <!-- Content 1 -->
-    <section id="layout-content">
-        {% page %}
-    </section>
+    <!-- div A -->
+    <div id = "divA">
+        <p>Division A</p>
+    </div>
 
-    <!-- Content 2 -->
+    <!-- div B -->
+    <div id = "divB">
+        <p>Division B</p>
+    </div>
+
+    <!-- div C -->
+    <div id = "divC">
+        <p>Division C</p>
+    </div>
 
 
-    <!-- Footer -->
     <footer id="layout-footer">
         {% partial "footer" %}
     </footer>
 
-    <!-- Scripts -->
+    <!-- Scripts 
     <script src="{{ [
         'assets/javascript/jquery.js',
         'assets/vendor/bootstrap/js/transition.js',
@@ -76,6 +60,7 @@ description = "Default layout"
         ]|theme }}"></script>
         {% framework extras %}
         {% scripts %}
+    -->
+</body>
 
-    </body>
-    </html>
+</html>
