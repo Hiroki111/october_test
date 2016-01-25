@@ -30,20 +30,31 @@ footer {
 	overflow:hidden;
 }
 
-#divA, #divB, #divC{
+#divA_home, #divB_home, #divC_home{
 	height: 250px;
 	text-align: center;
 	padding: 0;
 }
-
-#divA{
-	background-color:red;
+#divA_home{
+	background-color:#80d5ff;
+}
+#divB_home{
+	background-color: #ccffcc;
+}
+#divC_home{
+	background-color: #ffccff;
 }
 
-#divB{
-	background-color: green;
+#divA_sub, #divB_sub{
+	height: 700px;
+	float: left;
 }
 
-#divC{
-	background-color: blue;
+#divA_sub{
+	width: 75%;
+	background-color:#e5ffe5; 
+}
+#divB_sub{
+	width: 25%;
+	background-color:#ffcccc;
 }

@@ -1,10 +1,10 @@
-description = "Default layout"
+description = "Default layout for sub"
 ==
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Hiro.october-B - {{ this.page.title }}</title>
+    <title>Hiro.october-sub page - {{ this.page.title }}</title>
     <meta name="description" content="{{ this.page.meta_description }}">
     <meta name="title" content="{{ this.page.meta_title }}">
     <meta name="author" content="OctoberCMS">
@@ -20,7 +20,7 @@ description = "Default layout"
     <header>
         <h1>Header</h1>
     </header>
-    <div id = "divA">
+    <div id = "divA_sub">
         <h2>Div A</h2>
         <ul>
             <li>item 1</li>
@@ -28,7 +28,7 @@ description = "Default layout"
             <li>item 3</li>
         </ul>
     </div>
-    <div id = "divB">
+    <div id = "divB_sub">
         <h2>Div B</h2>
         <ul>
             <li>item 1</li>
@@ -36,5 +36,8 @@ description = "Default layout"
             <li>item 3</li>
         </ul>
     </div>
+    <footer id="layout-footer">
+        {% partial "footer" %}
+    </footer>
 </body>
 </html>
